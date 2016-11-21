@@ -2,7 +2,9 @@ var express = require('express');
 var router = express.Router();
 var mongodb = require('mongodb');
 var config = require('../config');
+
 var mLab = 'mongodb://' + config.db.host + '/' + config.db.name;
+
 var shortid = require('shortid');
 shortid.characters('0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ$@');
 var validUrl = require('valid-url');
